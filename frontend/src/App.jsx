@@ -5,7 +5,7 @@ import axios from "axios";
 function App() {
   const [count, setCount] = useState([]);
   useEffect(() => {
-    axios.get("/api/login").then( (response) => {
+    axios.get("/api/jokes").then( (response) => {
       console.log("respons",response.data);
       setCount(response.data);
     });

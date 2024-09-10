@@ -7,7 +7,7 @@ app.get('/', (req, res) => {
   res.send('Hello World!')
 })
 
-app.get('/login', (req, res) => {
+app.get('/jokes', (req, res) => {
     res.send([
       {
         "id": 1,
